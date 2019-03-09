@@ -1,0 +1,32 @@
+/* 容器样式 */
+.login-container{
+position: fixed;
+top:0;
+bottom: 0;
+left: 0;
+right: 0;
+}
+/* logo样式 */
+.login-container .login-logo{
+	height:240px;
+	line-height: 240px;
+	color:#fff;
+	text-align:center;
+	background-color: green;
+}
+
+/* form样式 */
+.login-container .login-form{
+	padding:5px;
+}
+.login-container .login-button{
+	margin:5px;
+}
+
+.login-container .login-third{
+	text-align:center;
+	color:green;
+}
+.login-container .login-third i{
+	margin:30px;
+}
