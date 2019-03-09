@@ -1,6 +1,7 @@
 //登录
 import axios from 'axios'
 import React from 'react'
+import { withRouter } from 'react-router-dom'
 import {
 	Form,
 	Icon,
@@ -37,7 +38,10 @@ class Login extends React.Component {
 		});
 		//客户端接收到token然后存储到sessionStorage中
 		sessionStorage.setItem('mytoken',ret.data.data.token)
+		// 获取history对象
+		let { history } = this.props
 		//跳转到主页面
+		history.push('/home')
 	}
 	cancle=()=>{
 	}
@@ -85,4 +89,4 @@ class Login extends React.Component {
 	}
 }
 
-export default Login;
+export default withRouter(Login);
